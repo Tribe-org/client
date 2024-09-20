@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky"
+    "prepare": "husky",
+    "setup": "node scripts/private_key && sh scripts/env.sh"
   },
   "dependencies": {
     "next": "14.2.13",
