@@ -34,10 +34,10 @@ export default function LoginPage() {
           <Image src="/images/tribe.svg" width={140} height={48} alt="" />
         </div>
         <div className="flex flex-col items-center justify-center gap-1">
-          <p className="text-2xl font-bold leading-[33.6px]">
+          <p className="text-2xl leading-[33.6px] font-bold">
             트라이브에 잘 오셨어요!
           </p>
-          <p className="text-base font-normal leading-[22.4px] -tracking-[2%]">
+          <p className="text-base leading-[22.4px] font-normal -tracking-[2%]">
             마음껏 도전하고 경험하며 원하는 삶을 그려가요
           </p>
         </div>
