@@ -10,8 +10,6 @@ export default function LoginPage() {
   const searchParams = useSearchParams();
   const { replace } = useRouter();
 
-  console.log(searchParams.toString());
-
   useEffect(() => {
     const accessToken = searchParams.get('access_token');
     const code = searchParams.get('code');
