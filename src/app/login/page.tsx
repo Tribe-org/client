@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/button';
 
 export default function LoginPage() {
   const searchParams = useSearchParams();
-  const { replace } = useRouter();
+  const { push, replace } = useRouter();
 
   useEffect(() => {
     const accessToken = searchParams.get('access_token');
@@ -24,6 +24,10 @@ export default function LoginPage() {
       replace('/');
     }
   }, []);
+
+  const handleLogin = () => {
+    push('/api/auth/start');
+  };
 
   return (
     <section className="flex flex-col items-center justify-center gap-4">
@@ -44,6 +48,7 @@ export default function LoginPage() {
         <Button
           color="primary"
           className="flex items-center justify-center bg-[#03C75A]"
+          onClick={handleLogin}
         >
           <Image src="/images/naver.svg" width={16} height={16} alt="" />
           네이버로 시작하기
